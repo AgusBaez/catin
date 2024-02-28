@@ -1,7 +1,7 @@
-import { Module } from '@nestjs/common';
-import { AuthModule } from './auth/auth.module';
-import { UserModule } from './user/user.module';
-import { CatModule } from './cat/cat.module';
+import { Module } from "@nestjs/common";
+import { AuthModule } from "./api/auth/auth.module";
+import UserModule from "./api/user";
+import { CatModule } from "./api/cat/cat.module";
 
 @Module({
   imports: [AuthModule, UserModule, CatModule],
